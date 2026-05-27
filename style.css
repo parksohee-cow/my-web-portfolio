@@ -1,0 +1,61 @@
+/* 전체 배경과 글꼴 스타일 */
+body {
+    font-family: 'Malgun Gothic', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 상단 제목 부분 디자인 */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #212529;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+/* 핵심: 과제들을 2행 2열 바둑판 모양으로 배치 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2열로 정렬 */
+    gap: 30px; /* 각 과제창 사이의 간격 */
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* 각 과제 카드 디자인 */
+.grid-item {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* 부드러운 그림자 효과 */
+    text-align: center;
+}
+
+.grid-item h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #495057;
+    font-size: 1.3rem;
+}
+
+/* 과제 화면이 나타나는 iframe 창 크기 및 스타일 */
+iframe {
+    width: 100%;
+    height: 450px; /* 화면이 잘 보일 수 있도록 넉넉한 높이 설정 */
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background: #ffffff;
+}
